@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44B7598727AB0E0A008193CB /* Nag_o_maticApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B7598627AB0E0A008193CB /* Nag_o_maticApp.swift */; };
+		44B7598927AB0E0A008193CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B7598827AB0E0A008193CB /* ContentView.swift */; };
+		44B7598B27AB0E0B008193CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44B7598A27AB0E0B008193CB /* Assets.xcassets */; };
+		44B7598E27AB0E0B008193CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44B7598D27AB0E0B008193CB /* Preview Assets.xcassets */; };
+		44B7599527AB0EA9008193CB /* TaskCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B7599427AB0EA9008193CB /* TaskCard.swift */; };
+		44B7599727AB0EAE008193CB /* DoNowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B7599627AB0EAE008193CB /* DoNowCard.swift */; };
+		44B759A027AB0F53008193CB /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B7599F27AB0F53008193CB /* Intents.framework */; };
+		44B759A327AB0F53008193CB /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B759A227AB0F53008193CB /* IntentHandler.swift */; };
+		44B759AB27AB0F53008193CB /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B759AA27AB0F53008193CB /* IntentsUI.framework */; };
+		44B759AE27AB0F53008193CB /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B759AD27AB0F53008193CB /* IntentViewController.swift */; };
+		44B759B127AB0F53008193CB /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44B759AF27AB0F53008193CB /* MainInterface.storyboard */; };
+		44B759B527AB0F53008193CB /* PromptUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 44B759A927AB0F53008193CB /* PromptUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		44B759B827AB0F53008193CB /* Prompt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 44B7599D27AB0F53008193CB /* Prompt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44B759B327AB0F53008193CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44B7597B27AB0E0A008193CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44B759A827AB0F53008193CB;
+			remoteInfo = PromptUI;
+		};
+		44B759B627AB0F53008193CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44B7597B27AB0E0A008193CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44B7599C27AB0F53008193CB;
+			remoteInfo = Prompt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		44B759BF27AB0F53008193CB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				44B759B827AB0F53008193CB /* Prompt.appex in Embed App Extensions */,
+				44B759B527AB0F53008193CB /* PromptUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		44B7598327AB0E0A008193CB /* Nag-o-matic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nag-o-matic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44B7598627AB0E0A008193CB /* Nag_o_maticApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nag_o_maticApp.swift; sourceTree = "<group>"; };
+		44B7598827AB0E0A008193CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		44B7598A27AB0E0B008193CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44B7598D27AB0E0B008193CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		44B7599427AB0EA9008193CB /* TaskCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCard.swift; sourceTree = "<group>"; };
+		44B7599627AB0EAE008193CB /* DoNowCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoNowCard.swift; sourceTree = "<group>"; };
+		44B7599827AB0F04008193CB /* Nag-o-matic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Nag-o-matic.entitlements"; sourceTree = "<group>"; };
+		44B7599D27AB0F53008193CB /* Prompt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Prompt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		44B7599F27AB0F53008193CB /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		44B759A227AB0F53008193CB /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		44B759A427AB0F53008193CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44B759A927AB0F53008193CB /* PromptUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PromptUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		44B759AA27AB0F53008193CB /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		44B759AD27AB0F53008193CB /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		44B759B027AB0F53008193CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		44B759B227AB0F53008193CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44B7598027AB0E0A008193CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44B7599A27AB0F53008193CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44B759A027AB0F53008193CB /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44B759A627AB0F53008193CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44B759AB27AB0F53008193CB /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44B7597A27AB0E0A008193CB = {
+			isa = PBXGroup;
+			children = (
+				44B7598527AB0E0A008193CB /* Nag-o-matic */,
+				44B759A127AB0F53008193CB /* Prompt */,
+				44B759AC27AB0F53008193CB /* PromptUI */,
+				44B7599E27AB0F53008193CB /* Frameworks */,
+				44B7598427AB0E0A008193CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44B7598427AB0E0A008193CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44B7598327AB0E0A008193CB /* Nag-o-matic.app */,
+				44B7599D27AB0F53008193CB /* Prompt.appex */,
+				44B759A927AB0F53008193CB /* PromptUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44B7598527AB0E0A008193CB /* Nag-o-matic */ = {
+			isa = PBXGroup;
+			children = (
+				44B7599827AB0F04008193CB /* Nag-o-matic.entitlements */,
+				44B7598627AB0E0A008193CB /* Nag_o_maticApp.swift */,
+				44B7598827AB0E0A008193CB /* ContentView.swift */,
+				44B7599427AB0EA9008193CB /* TaskCard.swift */,
+				44B7599627AB0EAE008193CB /* DoNowCard.swift */,
+				44B7598A27AB0E0B008193CB /* Assets.xcassets */,
+				44B7598C27AB0E0B008193CB /* Preview Content */,
+			);
+			path = "Nag-o-matic";
+			sourceTree = "<group>";
+		};
+		44B7598C27AB0E0B008193CB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				44B7598D27AB0E0B008193CB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		44B7599E27AB0F53008193CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44B7599F27AB0F53008193CB /* Intents.framework */,
+				44B759AA27AB0F53008193CB /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44B759A127AB0F53008193CB /* Prompt */ = {
+			isa = PBXGroup;
+			children = (
+				44B759A227AB0F53008193CB /* IntentHandler.swift */,
+				44B759A427AB0F53008193CB /* Info.plist */,
+			);
+			path = Prompt;
+			sourceTree = "<group>";
+		};
+		44B759AC27AB0F53008193CB /* PromptUI */ = {
+			isa = PBXGroup;
+			children = (
+				44B759AD27AB0F53008193CB /* IntentViewController.swift */,
+				44B759AF27AB0F53008193CB /* MainInterface.storyboard */,
+				44B759B227AB0F53008193CB /* Info.plist */,
+			);
+			path = PromptUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44B7598227AB0E0A008193CB /* Nag-o-matic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44B7599127AB0E0B008193CB /* Build configuration list for PBXNativeTarget "Nag-o-matic" */;
+			buildPhases = (
+				44B7597F27AB0E0A008193CB /* Sources */,
+				44B7598027AB0E0A008193CB /* Frameworks */,
+				44B7598127AB0E0A008193CB /* Resources */,
+				44B759BF27AB0F53008193CB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44B759B427AB0F53008193CB /* PBXTargetDependency */,
+				44B759B727AB0F53008193CB /* PBXTargetDependency */,
+			);
+			name = "Nag-o-matic";
+			productName = "Nag-o-matic";
+			productReference = 44B7598327AB0E0A008193CB /* Nag-o-matic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44B7599C27AB0F53008193CB /* Prompt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44B759BC27AB0F53008193CB /* Build configuration list for PBXNativeTarget "Prompt" */;
+			buildPhases = (
+				44B7599927AB0F53008193CB /* Sources */,
+				44B7599A27AB0F53008193CB /* Frameworks */,
+				44B7599B27AB0F53008193CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Prompt;
+			productName = Prompt;
+			productReference = 44B7599D27AB0F53008193CB /* Prompt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		44B759A827AB0F53008193CB /* PromptUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44B759B927AB0F53008193CB /* Build configuration list for PBXNativeTarget "PromptUI" */;
+			buildPhases = (
+				44B759A527AB0F53008193CB /* Sources */,
+				44B759A627AB0F53008193CB /* Frameworks */,
+				44B759A727AB0F53008193CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PromptUI;
+			productName = PromptUI;
+			productReference = 44B759A927AB0F53008193CB /* PromptUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44B7597B27AB0E0A008193CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					44B7598227AB0E0A008193CB = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					44B7599C27AB0F53008193CB = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					44B759A827AB0F53008193CB = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 44B7597E27AB0E0A008193CB /* Build configuration list for PBXProject "Nag-o-matic" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44B7597A27AB0E0A008193CB;
+			productRefGroup = 44B7598427AB0E0A008193CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44B7598227AB0E0A008193CB /* Nag-o-matic */,
+				44B7599C27AB0F53008193CB /* Prompt */,
+				44B759A827AB0F53008193CB /* PromptUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44B7598127AB0E0A008193CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44B7598E27AB0E0B008193CB /* Preview Assets.xcassets in Resources */,
+				44B7598B27AB0E0B008193CB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44B7599B27AB0F53008193CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44B759A727AB0F53008193CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44B759B127AB0F53008193CB /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44B7597F27AB0E0A008193CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44B7599527AB0EA9008193CB /* TaskCard.swift in Sources */,
+				44B7598927AB0E0A008193CB /* ContentView.swift in Sources */,
+				44B7598727AB0E0A008193CB /* Nag_o_maticApp.swift in Sources */,
+				44B7599727AB0EAE008193CB /* DoNowCard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44B7599927AB0F53008193CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44B759A327AB0F53008193CB /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44B759A527AB0F53008193CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44B759AE27AB0F53008193CB /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44B759B427AB0F53008193CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44B759A827AB0F53008193CB /* PromptUI */;
+			targetProxy = 44B759B327AB0F53008193CB /* PBXContainerItemProxy */;
+		};
+		44B759B727AB0F53008193CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44B7599C27AB0F53008193CB /* Prompt */;
+			targetProxy = 44B759B627AB0F53008193CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44B759AF27AB0F53008193CB /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44B759B027AB0F53008193CB /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44B7598F27AB0E0B008193CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44B7599027AB0E0B008193CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44B7599227AB0E0B008193CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Nag-o-matic/Nag-o-matic.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Nag-o-matic/Preview Content\"";
+				DEVELOPMENT_TEAM = 2E5MDC86ME;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSiriUsageDescription = "Siri is so cool";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saltformysquid.Nag-o-matic";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44B7599327AB0E0B008193CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Nag-o-matic/Nag-o-matic.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Nag-o-matic/Preview Content\"";
+				DEVELOPMENT_TEAM = 2E5MDC86ME;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSiriUsageDescription = "Siri is so cool";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saltformysquid.Nag-o-matic";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		44B759BA27AB0F53008193CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2E5MDC86ME;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PromptUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PromptUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saltformysquid.Nag-o-matic.PromptUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44B759BB27AB0F53008193CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2E5MDC86ME;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PromptUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PromptUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saltformysquid.Nag-o-matic.PromptUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		44B759BD27AB0F53008193CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2E5MDC86ME;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Prompt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Prompt;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSiriUsageDescription = "Siri can help you use this app hands free";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saltformysquid.Nag-o-matic.Prompt";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		44B759BE27AB0F53008193CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2E5MDC86ME;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Prompt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Prompt;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSiriUsageDescription = "Siri can help you use this app hands free";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saltformysquid.Nag-o-matic.Prompt";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44B7597E27AB0E0A008193CB /* Build configuration list for PBXProject "Nag-o-matic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44B7598F27AB0E0B008193CB /* Debug */,
+				44B7599027AB0E0B008193CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44B7599127AB0E0B008193CB /* Build configuration list for PBXNativeTarget "Nag-o-matic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44B7599227AB0E0B008193CB /* Debug */,
+				44B7599327AB0E0B008193CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44B759B927AB0F53008193CB /* Build configuration list for PBXNativeTarget "PromptUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44B759BA27AB0F53008193CB /* Debug */,
+				44B759BB27AB0F53008193CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44B759BC27AB0F53008193CB /* Build configuration list for PBXNativeTarget "Prompt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44B759BD27AB0F53008193CB /* Debug */,
+				44B759BE27AB0F53008193CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44B7597B27AB0E0A008193CB /* Project object */;
+}
