@@ -3,9 +3,12 @@ import Foundation
 import SwiftUI
 
 
-struct Task {
-    let task: String
+class Task : ObservableObject{
+    let task: String = ""
     let icon: Image
+    var completed : Bool = false
+    
+    init(task: String, icon: Image, completed)
     
     static let example = Task(task: "Wake up", icon: Image("wakeUp"))
 }

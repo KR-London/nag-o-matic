@@ -9,6 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @StateObject private var viewModel = ViewModel()
+    @StateObject var alexTasks = [
+        Task(task: "Wake Up", icon: Image("wakeUp")),
+        Task(task: "Breakfast", icon: Image("wakeUp")),
+        Task(task: "Toothbrush", icon: Image("wakeUp")),
+        Task(task: "Chores", icon: Image("wakeUp")),
+        Task(task: "Leave", icon: Image("wakeUp")),
+    ]
     
     var body: some View {
         VStack{
@@ -85,6 +93,7 @@ struct ContentView: View {
         }
     }
 }
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView().previewDevice("iPad (7th generation)")

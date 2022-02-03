@@ -20,6 +20,7 @@
 		44B759B127AB0F53008193CB /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44B759AF27AB0F53008193CB /* MainInterface.storyboard */; };
 		44B759B527AB0F53008193CB /* PromptUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 44B759A927AB0F53008193CB /* PromptUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		44B759B827AB0F53008193CB /* Prompt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 44B7599D27AB0F53008193CB /* Prompt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		44D975AA27ABF95900289D8C /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D975A927ABF95900289D8C /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		44B759AD27AB0F53008193CB /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
 		44B759B027AB0F53008193CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		44B759B227AB0F53008193CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44D975A927ABF95900289D8C /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				44B7599827AB0F04008193CB /* Nag-o-matic.entitlements */,
 				44B7598627AB0E0A008193CB /* Nag_o_maticApp.swift */,
 				44B7598827AB0E0A008193CB /* ContentView.swift */,
+				44D975A927ABF95900289D8C /* ContentViewModel.swift */,
 				44B7599427AB0EA9008193CB /* TaskCard.swift */,
 				44B7599627AB0EAE008193CB /* DoNowCard.swift */,
 				44B7598A27AB0E0B008193CB /* Assets.xcassets */,
@@ -306,6 +309,7 @@
 				44B7598927AB0E0A008193CB /* ContentView.swift in Sources */,
 				44B7598727AB0E0A008193CB /* Nag_o_maticApp.swift in Sources */,
 				44B7599727AB0EAE008193CB /* DoNowCard.swift in Sources */,
+				44D975AA27ABF95900289D8C /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,18 +489,19 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.saltformysquid.Nag-o-matic";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saltformysquid.Nagomatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -517,18 +522,19 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.saltformysquid.Nag-o-matic";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saltformysquid.Nagomatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -548,7 +554,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.saltformysquid.Nag-o-matic.PromptUI";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saltformysquid.Nagomatic.PromptUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -573,7 +579,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.saltformysquid.Nag-o-matic.PromptUI";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saltformysquid.Nagomatic.PromptUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -600,7 +606,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.saltformysquid.Nag-o-matic.Prompt";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saltformysquid.Nagomatic.Prompt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -627,7 +633,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.saltformysquid.Nag-o-matic.Prompt";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saltformysquid.Nagomatic.Prompt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
