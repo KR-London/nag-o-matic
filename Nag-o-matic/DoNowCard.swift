@@ -40,6 +40,6 @@ struct DoNowCard: View {
 
 struct DoNowCard_Previews: PreviewProvider {
     static var previews: some View {
-        DoNowCard(task: Task.example).previewDevice("iPad (7th generation)")
+        DoNowCard(task: Task()).previewDevice("iPad (7th generation)")
     }
 }

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4407C54F284FD1C400601035 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B7599F27AB0F53008193CB /* Intents.framework */; };
+		4407C550284FD1C500601035 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B7599F27AB0F53008193CB /* Intents.framework */; };
+		4407C551284FD1C800601035 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B759AA27AB0F53008193CB /* IntentsUI.framework */; };
+		4407C552284FD1C800601035 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B759AA27AB0F53008193CB /* IntentsUI.framework */; };
+		44A838CF284FD59E00A0C3C3 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B759A227AB0F53008193CB /* IntentHandler.swift */; };
 		44B7598727AB0E0A008193CB /* Nag_o_maticApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B7598627AB0E0A008193CB /* Nag_o_maticApp.swift */; };
 		44B7598927AB0E0A008193CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B7598827AB0E0A008193CB /* ContentView.swift */; };
 		44B7598B27AB0E0B008193CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44B7598A27AB0E0B008193CB /* Assets.xcassets */; };
@@ -14,13 +19,19 @@
 		44B7599527AB0EA9008193CB /* TaskCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B7599427AB0EA9008193CB /* TaskCard.swift */; };
 		44B7599727AB0EAE008193CB /* DoNowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B7599627AB0EAE008193CB /* DoNowCard.swift */; };
 		44B759A027AB0F53008193CB /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B7599F27AB0F53008193CB /* Intents.framework */; };
-		44B759A327AB0F53008193CB /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B759A227AB0F53008193CB /* IntentHandler.swift */; };
 		44B759AB27AB0F53008193CB /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B759AA27AB0F53008193CB /* IntentsUI.framework */; };
 		44B759AE27AB0F53008193CB /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B759AD27AB0F53008193CB /* IntentViewController.swift */; };
 		44B759B127AB0F53008193CB /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44B759AF27AB0F53008193CB /* MainInterface.storyboard */; };
-		44B759B527AB0F53008193CB /* PromptUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 44B759A927AB0F53008193CB /* PromptUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		44B759B827AB0F53008193CB /* Prompt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 44B7599D27AB0F53008193CB /* Prompt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		44B759B527AB0F53008193CB /* PromptUI.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 44B759A927AB0F53008193CB /* PromptUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		44B759B827AB0F53008193CB /* Prompt.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 44B7599D27AB0F53008193CB /* Prompt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		44C6856227ACFDE9009C6F32 /* Nag_o_maticApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B7598627AB0E0A008193CB /* Nag_o_maticApp.swift */; };
+		44C6856327ACFDF7009C6F32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B7598827AB0E0A008193CB /* ContentView.swift */; };
+		44C6856427ACFDFA009C6F32 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D975A927ABF95900289D8C /* ContentViewModel.swift */; };
+		44C6856527ACFE00009C6F32 /* DoNowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B7599627AB0EAE008193CB /* DoNowCard.swift */; };
 		44D975AA27ABF95900289D8C /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D975A927ABF95900289D8C /* ContentViewModel.swift */; };
+		44D975AE27ACF96600289D8C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D975AD27ACF96600289D8C /* Model.swift */; };
+		44D975AF27ACFA1F00289D8C /* TaskCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B7599427AB0EA9008193CB /* TaskCard.swift */; };
+		44D975B027ACFA2300289D8C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D975AD27ACF96600289D8C /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,17 +52,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		44B759BF27AB0F53008193CB /* Embed App Extensions */ = {
+		44B759BF27AB0F53008193CB /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				44B759B827AB0F53008193CB /* Prompt.appex in Embed App Extensions */,
-				44B759B527AB0F53008193CB /* PromptUI.appex in Embed App Extensions */,
+				44B759B827AB0F53008193CB /* Prompt.appex in Embed Foundation Extensions */,
+				44B759B527AB0F53008193CB /* PromptUI.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -74,6 +85,7 @@
 		44B759B027AB0F53008193CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		44B759B227AB0F53008193CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44D975A927ABF95900289D8C /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		44D975AD27ACF96600289D8C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4407C551284FD1C800601035 /* IntentsUI.framework in Frameworks */,
+				4407C54F284FD1C400601035 /* Intents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4407C552284FD1C800601035 /* IntentsUI.framework in Frameworks */,
 				44B759A027AB0F53008193CB /* Intents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4407C550284FD1C500601035 /* Intents.framework in Frameworks */,
 				44B759AB27AB0F53008193CB /* IntentsUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,6 +147,7 @@
 				44B7598627AB0E0A008193CB /* Nag_o_maticApp.swift */,
 				44B7598827AB0E0A008193CB /* ContentView.swift */,
 				44D975A927ABF95900289D8C /* ContentViewModel.swift */,
+				44D975AD27ACF96600289D8C /* Model.swift */,
 				44B7599427AB0EA9008193CB /* TaskCard.swift */,
 				44B7599627AB0EAE008193CB /* DoNowCard.swift */,
 				44B7598A27AB0E0B008193CB /* Assets.xcassets */,
@@ -185,7 +202,7 @@
 				44B7597F27AB0E0A008193CB /* Sources */,
 				44B7598027AB0E0A008193CB /* Frameworks */,
 				44B7598127AB0E0A008193CB /* Resources */,
-				44B759BF27AB0F53008193CB /* Embed App Extensions */,
+				44B759BF27AB0F53008193CB /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -240,7 +257,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					44B7598227AB0E0A008193CB = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -308,6 +325,8 @@
 				44B7599527AB0EA9008193CB /* TaskCard.swift in Sources */,
 				44B7598927AB0E0A008193CB /* ContentView.swift in Sources */,
 				44B7598727AB0E0A008193CB /* Nag_o_maticApp.swift in Sources */,
+				44D975AE27ACF96600289D8C /* Model.swift in Sources */,
+				44A838CF284FD59E00A0C3C3 /* IntentHandler.swift in Sources */,
 				44B7599727AB0EAE008193CB /* DoNowCard.swift in Sources */,
 				44D975AA27ABF95900289D8C /* ContentViewModel.swift in Sources */,
 			);
@@ -317,7 +336,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44B759A327AB0F53008193CB /* IntentHandler.swift in Sources */,
+				44D975B027ACFA2300289D8C /* Model.swift in Sources */,
+				44C6856327ACFDF7009C6F32 /* ContentView.swift in Sources */,
+				44C6856427ACFDFA009C6F32 /* ContentViewModel.swift in Sources */,
+				44C6856227ACFDE9009C6F32 /* Nag_o_maticApp.swift in Sources */,
+				44D975AF27ACFA1F00289D8C /* TaskCard.swift in Sources */,
+				44C6856527ACFE00009C6F32 /* DoNowCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +431,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -462,7 +486,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

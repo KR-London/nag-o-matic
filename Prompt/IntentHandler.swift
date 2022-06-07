@@ -6,6 +6,8 @@
 //
 
 import Intents
+import Nag_o_matic
+
 
 class IntentHandler: INExtension {
     
@@ -31,14 +33,15 @@ extension IntentHandler: INSetTaskAttributeIntentHandling {
             // parse the name away from the rest
             // check if it is on the tasklist
             
-            result = INTaskResolutionResult.success(with: intent.targetTask!)
-        }
-        else {
-            result  = INTaskResolutionResult.disambiguation(with: [intent.targetTask!])
+          
+            let tasks = taskList().alexTasksText
+            
+            if tasks.contains(task.description){
+                result = INTaskResolutionResult.success(with: intent.targetTask!)
+            }
         }
         
-        /// what is the result?
-     
+        result  = INTaskResolutionResult.disambiguation(with: [intent.targetTask!])
         
         return result
     }

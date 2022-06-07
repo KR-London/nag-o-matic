@@ -3,14 +3,31 @@ import Foundation
 import SwiftUI
 
 
-class Task : ObservableObject{
-    let task: String = ""
-    let icon: Image
+public class Task : ObservableObject{
+    var task: String = ""
+    var icon: Image
     var completed : Bool = false
     
-    init(task: String, icon: Image, completed)
+    init(task: String, icon: Image, completed: Bool...){
+        self.task = task
+        self.icon = icon
+        self.completed = completed.first ?? false
+    }
     
-    static let example = Task(task: "Wake up", icon: Image("wakeUp"))
+    init(){
+        task = "Wake up"
+        icon = Image("wakeUp")
+        completed = false
+    }
+
+}
+
+public class Tasks : ObservableObject{
+    var tasks : [Task]
+    
+    init(tasks : [Task]){
+        self.tasks = tasks
+    }
 }
 
 struct TaskCard: View {
@@ -38,7 +55,7 @@ struct TaskCard: View {
 
 struct TaskCard_Previews: PreviewProvider {
     static var previews: some View {
-        TaskCard(task: Task.example).previewDevice("iPad (7th generation)")
+        TaskCard(task: Task()).previewDevice("iPad (7th generation)")
     }
 }
 

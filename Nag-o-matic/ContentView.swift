@@ -6,17 +6,20 @@
 //
 
 import SwiftUI
+import Intents
 
 struct ContentView: View {
     
     @StateObject private var viewModel = ViewModel()
-    @StateObject var alexTasks = [
-        Task(task: "Wake Up", icon: Image("wakeUp")),
-        Task(task: "Breakfast", icon: Image("wakeUp")),
-        Task(task: "Toothbrush", icon: Image("wakeUp")),
-        Task(task: "Chores", icon: Image("wakeUp")),
-        Task(task: "Leave", icon: Image("wakeUp")),
-    ]
+    //@State
+    
+//    var alexTasks = Tasks(tasks: [
+//        Task(task: "Wake Up", icon: Image("wakeUp")),
+//        Task(task: "Breakfast", icon: Image("wakeUp")),
+//        Task(task: "Toothbrush", icon: Image("wakeUp")),
+//        Task(task: "Chores", icon: Image("wakeUp")),
+//        Task(task: "Leave", icon: Image("wakeUp")),
+//    ])
     
     var body: some View {
         VStack{
@@ -42,40 +45,38 @@ struct ContentView: View {
                     Text("8:30").foregroundColor(.gray).font(.title).frame(width: 149, height: 60, alignment: .top)
                 }
                 VStack{
-                    TaskCard(task: Task.example).padding(8.5)
-                    TaskCard(task: Task.example).padding(8.5)
-                    TaskCard(task: Task.example).padding(8.5)
-                    TaskCard(task: Task.example).padding(8.5)
-                    TaskCard(task: Task.example).padding(8.5)
-                    TaskCard(task: Task.example).padding(8.5)
-                    TaskCard(task: Task.example).padding(8.5)
-                    TaskCard(task: Task.example).padding(8.5)
-                    TaskCard(task: Task.example).padding(8.5)
+                    TaskCard(task: Task()).padding(8.5)
+                    TaskCard(task:  Task()).padding(8.5)
+                    TaskCard(task: Task()).padding(8.5)
+                    TaskCard(task: Task()).padding(8.5)
+                    TaskCard(task: Task()).padding(8.5)
+                    TaskCard(task: Task()).padding(8.5)
+                    TaskCard(task: Task()).padding(8.5)
+                    TaskCard(task: Task()).padding(8.5)
+                    TaskCard(task: Task()).padding(8.5)
                         // TaskCard(task: Task.example).padding(8.5)
                 }
                 VStack{
-                    TaskCard(task: Task.example).padding(8.5)
-                    TaskCard(task: Task.example).padding(8.5)
-                    TaskCard(task: Task.example).padding(8.5)
-                    TaskCard(task: Task.example).padding(8.5)
-                    TaskCard(task: Task.example).padding(8.5)
-                    TaskCard(task: Task.example).padding(8.5)
-                    TaskCard(task: Task.example).padding(8.5)
-                    TaskCard(task: Task.example).padding(8.5)
-                    TaskCard(task: Task.example).padding(8.5)
-                        // TaskCard(task: Task.example).padding(8.5)
+                    TaskCard(task: Task()).padding(8.5)
+                    TaskCard(task:  Task()).padding(8.5)
+                    TaskCard(task: Task()).padding(8.5)
+                    TaskCard(task: Task()).padding(8.5)
+                    TaskCard(task: Task()).padding(8.5)
+                    TaskCard(task: Task()).padding(8.5)
+                    TaskCard(task: Task()).padding(8.5)
+                    TaskCard(task: Task()).padding(8.5)
+                    TaskCard(task: Task()).padding(8.5)
                 }
                 VStack{
-                    TaskCard(task: Task.example).padding(8.5)
-                    TaskCard(task: Task.example).padding(8.5)
-                    TaskCard(task: Task.example).padding(8.5)
-                    TaskCard(task: Task.example).padding(8.5)
-                    TaskCard(task: Task.example).padding(8.5)
-                    TaskCard(task: Task.example).padding(8.5)
-                    TaskCard(task: Task.example).padding(8.5)
-                    TaskCard(task: Task.example).padding(8.5)
-                    TaskCard(task: Task.example).padding(8.5)
-                        //  TaskCard(task: Task.example).padding(8.5)
+                    TaskCard(task: Task()).padding(8.5)
+                    TaskCard(task:  Task()).padding(8.5)
+                    TaskCard(task: Task()).padding(8.5)
+                    TaskCard(task: Task()).padding(8.5)
+                    TaskCard(task: Task()).padding(8.5)
+                    TaskCard(task: Task()).padding(8.5)
+                    TaskCard(task: Task()).padding(8.5)
+                    TaskCard(task: Task()).padding(8.5)
+                    TaskCard(task: Task()).padding(8.5)
                 }
             }
                 // Divider().padding()
@@ -84,9 +85,9 @@ struct ContentView: View {
                 Rectangle().fill(Color.white).frame(width: 900, height: 150, alignment: .center).shadow(color: .gray, radius: 10, x: 0, y: 0)
                 HStack{
                     Text("Do Now").foregroundColor(.gray).font(.title).frame(width: 149, height: 60, alignment: .center)
-                    DoNowCard(task: Task.example).padding(8.5)
-                    DoNowCard(task: Task.example).padding(8.5)
-                    DoNowCard(task: Task.example).padding(8.5)
+                    DoNowCard(task: Task()).padding(8.5)
+                    DoNowCard(task: Task()).padding(8.5)
+                    DoNowCard(task: Task()).padding(8.5)
                 }
             }
             Spacer()
